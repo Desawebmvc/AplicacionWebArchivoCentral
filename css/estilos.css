@@ -1,0 +1,176 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: serif, arial;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../imagenes/archivo2.jpg);
+    background-color: #E6DADA;
+    background-size:  cover;
+    width: 100%;
+    height: 100%;
+}
+
+/*Propiedades para el logo de la universidad*/
+img{
+  float: left;
+  /*width: 500px;
+  height: 50px;*/
+  position: absolute;
+  padding-left: 10px;
+  /*top: -45px;*/
+}
+
+/*Define el titulo en la cabecera.*/
+#titulo_logo{
+  position: relative;
+  /*left: 570px;*/
+  text-align: center;
+  top: 10px;
+  font-size: 50px;
+  color: #FF0000;
+}
+
+/*Para darle propiedades a los titulos y a los mensajes.*/
+h1, h2{
+  text-align: left;  
+  margin-bottom: 20px;
+  color:  white;
+  font-family: serif, arial;
+}
+
+/*Div para manejar la carpeta paginas: borrar_archivos.php y guardar_archivos.php*/
+#div_uno{
+    margin: 0 auto;
+    margin-top: 17%;
+    width: 30%;
+    max-width: 700px;
+    background-color: rgba(0,0,0,0.5);
+    padding: 30px;
+    /*border:  1px solid rgba(0,0,0,0.2);*/
+    -webkit-border-radius:15px;
+    -moz-border-radius:15px;
+    -o-border-radius:15px;
+}
+
+/*el a: Para los enlaces y el label: Para los nombres de los input*/
+a, label{
+    text-align: left;  
+    margin-bottom: 20px;
+    color:  white;
+    font-family: serif, arial;
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: #1AF8AC;
+}
+
+#file_submit{
+    display: block;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 20px;
+    background: linear-gradient(#0090FF, #0090FF);
+    border: 0;
+    color: white;
+    opacity: 0.8;
+    cursor: pointer;
+    margin-bottom: 0;
+    width: 150px;
+    height: 35px;
+    border: 0;
+    border-radius: 5px;
+    -webkit-border-radius:5px;
+    -o-border-radius:5px;
+    -moz-border-radius:5px;
+    font-weight: bolder;
+}
+
+#file_submit:hover{
+    opacity: 1;
+}
+
+/* Para modificar las propiedades de los input tipo file de form_borrar_archivos.php, form_descarga.php y form_guardar_archivos.php*/
+.custom-input-file {
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    width: 150px;
+    height: 35px;
+    border-radius: 5px;
+    background: #0090FF;
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: bolder;
+    opacity: 0.8;
+    margin-bottom: 0;
+}
+
+.custom-input-file .input-file {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-size: 10000px;
+    border: 90px solid transparent;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    position: absolute;
+    right: -1000px;
+    top: -1000px;
+    cursor: pointer;
+}
+
+.custom-input-file:hover{
+    opacity: 1;
+}
+
+/*Para los nombres de los input*/
+label{
+    font-size: 20px;
+}
+
+/*Propiedades para el menú y el logo de la universidad*/
+section {
+  /*background: rgba(0,0,0,0.9);*/
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 82px;
+  position: fixed;
+  top: 0px;
+  /*z-index: 100;*/
+}
+
+/*Propiedades para el menú.*/
+nav {
+  position: relative;
+  top: -32px;
+  float: right; /* Desplazamos el nav hacia la izquierda */
+}
+ 
+nav ul {
+  list-style: none;
+  overflow: hidden; /* Limpiamos errores de float */
+}
+ 
+nav ul li {
+  float: left;
+  font-family: serif, arial;
+  font-size: 16px;
+}
+ 
+nav ul li a {
+  display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
+  padding: 10px;
+  height: 30px;
+  color: #1AF8AC;
+  /*text-decoration: none;*/
+}
+ 
+nav ul li:hover {
+  background: #A3CAC8;
+  height: 37px;
+}
